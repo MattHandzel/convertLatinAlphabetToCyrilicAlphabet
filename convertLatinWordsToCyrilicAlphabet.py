@@ -21,7 +21,7 @@ outputFilePath = "/wordsInCyrilic.txt" # '/content/allWordsThatYouCanWriteWithCy
 badLetters = ['d','f','g','i','j','q','s','v','z'] # These are all of the letters that cannot be written using the cyrilic alphabet
 latinToCyrilic = [['y','у'],["k","к"],['e','е'],['r','г'],['x','х'],["p","р"],['o','o'],['t','т'],["b","в"],['h','н'],['n','п'],['w','ш'],['u', "ц"]] # Convert the latin characters to their cyrilic counterparts
 
-if name == "main":
+if __name__ == "main":
   # Getting the data and then making it all lowercase (so that we don't have to check for the upper AND lower case version of each letter) 
   words = open(listOfWordsFilePath, "r").read()
   words = [z.lower() for z in words.split('\n')]
